@@ -1,0 +1,152 @@
+@import "layout.css";
+@import url(../fonts/fontello/css/webicons.css);
+
+/*=============VARIABLES & MIXINS=========*/
+/*1. VARIABLES*/
+/*-------Fonts---------*/
+$mainFont: "Raleway", "Georgia";
+$featureFont: "Sans";
+$fontSize: 1em;
+$headerFont: "Raleway";
+
+/*-------Colors-------*/
+$blue: #46A4DA;
+$highlight: #EFAB34;
+$color: #000;
+$whiteTransparentBg: url("../images/bg/whiteBg.png");
+
+/*2. MIXINS*/
+@mixin divPadding{
+    padding: 0 3%;
+}
+
+/*============DOCUMENT STYLES==========*/
+body{
+    color: $color;
+    font-family: $mainFont;
+    font-size: $fontSize;
+    font-weight: 400;
+}
+
+header{
+    background: $whiteTransparentBg;
+    box-shadow: 0px 1px 5px 1px #ccc;}
+
+p{
+    padding: 5%;
+    
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $headerFont;
+    .highlightText{
+        color: $highlight;
+    }
+}
+li{
+    list-style: none;
+    padding: 3% 0;
+    i{
+        color: $highlight;
+        float: left;
+        font-size: 1.5em;
+        text-shadow: 0 -1px 0 darken($blue, 20%);
+        padding: 0 3%;
+    }
+}
+.quote{
+    font-weight: 200;
+    font-size: 1.2em;
+    text-align: right;
+    
+}
+
+/*===========NAVIGATION======*/
+.cbp-fbscroller > nav{
+        background: none repeat scroll 0 0 #000000;
+    border-radius: 10px;
+    opacity: 0.6;
+    padding: 10px;
+    right: -10px;
+    width: 50px;
+}
+
+
+/*==========SECTIONS=========*/
+
+.cbp-fbscroller section{height: 85%;}
+.sectionTitle{
+    padding-top: 20px;
+    border-bottom: 1px solid #eee;
+    h2{color: darken($blue, 20%);}
+        
+}
+.borderLeft{
+    border-left: solid 1px;
+    border-color: lighten($blue, 10%);
+}
+.circles{
+    /*border: 1px solid #000;*/
+    border-radius: 50%;
+    overflow: hidden;
+    width: 15em;
+    height: 15em;
+    background: url("../images/bg/graph.png");
+    margin: 10px auto;
+    text-align: center;
+    padding-top: 15%;
+    i{
+        color: $blue;
+        font-size: 5em;
+        text-shadow: 1px 1px #FFFFFF;
+    &:hover{
+        
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  -webkit-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+  display: inline-block;
+
+    }
+    }
+    
+
+    
+    
+}
+/*#spacer{height: 140px;}*/
+#fbsection1 {
+	background: url("../images/bg/graphdark.png") repeat;
+        /*height: auto;*/
+}
+
+#fbsection2 {
+	background: #fcfcfc;
+        /*height: auto;*/
+        
+}
+
+#fbsection3 {
+        color: #fff;
+	background: url("../images/gears.png") no-repeat bottom right $blue;
+        h2{color: #fff;}
+        h3{
+            color: #234F6A;
+            text-align: center;
+            text-shadow: 0 1px 0 #DDDDDD;
+        }
+        &>div>div{
+            @include divPadding;
+        }
+        p{padding: 0 3%;}
+        
+}
+
+#fbsection4 {
+	background: #fff;
+}
+
+#fbsection5 {
+	background-image: url(../images/5.jpg);
+}

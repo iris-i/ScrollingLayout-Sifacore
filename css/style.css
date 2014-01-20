@@ -1,0 +1,115 @@
+@import url(layout.css);
+@import url(../fonts/fontello/css/webicons.css);
+/*=============VARIABLES & MIXINS=========*/
+/*1. VARIABLES*/
+/*-------Fonts---------*/
+/*-------Colors-------*/
+/*2. MIXINS*/
+/*============DOCUMENT STYLES==========*/
+body {
+  color: black;
+  font-family: "Raleway", "Georgia";
+  font-size: 1em;
+  font-weight: 400; }
+
+header {
+  background: url("../images/bg/whiteBg.png");
+  box-shadow: 0px 1px 5px 1px #cccccc; }
+
+p {
+  padding: 5%; }
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Raleway"; }
+  h2 .highlightText {
+    color: #efab34; }
+
+li {
+  list-style: none;
+  padding: 3% 0; }
+  li i {
+    color: #efab34;
+    float: left;
+    font-size: 1.5em;
+    text-shadow: 0 -1px 0 #1f6e9b;
+    padding: 0 3%; }
+
+.quote {
+  font-weight: 200;
+  font-size: 1.2em;
+  text-align: right; }
+
+/*===========NAVIGATION======*/
+.cbp-fbscroller > nav {
+  background: none repeat scroll 0 0 black;
+  border-radius: 10px;
+  opacity: 0.6;
+  padding: 10px;
+  right: -10px;
+  width: 50px; }
+
+/*==========SECTIONS=========*/
+.cbp-fbscroller section {
+  height: 85%; }
+
+.sectionTitle {
+  padding-top: 20px;
+  border-bottom: 1px solid #eeeeee; }
+  .sectionTitle h2 {
+    color: #1f6e9b; }
+
+.borderLeft {
+  border-left: solid 1px;
+  border-color: #71b9e2; }
+
+.circles {
+  /*border: 1px solid #000;*/
+  border-radius: 50%;
+  overflow: hidden;
+  width: 15em;
+  height: 15em;
+  background: url("../images/bg/graph.png");
+  margin: 10px auto;
+  text-align: center;
+  padding-top: 15%; }
+  .circles i {
+    color: #46a4da;
+    font-size: 5em;
+    text-shadow: 1px 1px white; }
+    .circles i:hover {
+      -moz-animation: spin 2s infinite linear;
+      -o-animation: spin 2s infinite linear;
+      -webkit-animation: spin 2s infinite linear;
+      animation: spin 2s infinite linear;
+      display: inline-block; }
+
+/*#spacer{height: 140px;}*/
+#fbsection1 {
+  background: url("../images/bg/graphdark.png") repeat;
+  /*height: auto;*/ }
+
+#fbsection2 {
+  background: #fcfcfc;
+  /*height: auto;*/ }
+
+#fbsection3 {
+  color: #fff;
+  background: url("../images/gears.png") no-repeat bottom right #46a4da; }
+  #fbsection3 h2 {
+    color: #fff; }
+  #fbsection3 h3 {
+    color: #234F6A;
+    text-align: center;
+    text-shadow: 0 1px 0 #dddddd; }
+  #fbsection3 > div > div {
+    padding: 0 3%; }
+  #fbsection3 p {
+    padding: 0 3%; }
+
+#fbsection4 {
+  background: #fff; }
+
+#fbsection5 {
+  background-image: url(../images/5.jpg); }

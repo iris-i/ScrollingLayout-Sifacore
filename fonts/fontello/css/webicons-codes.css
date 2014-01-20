@@ -1,0 +1,11 @@
+
+.icon-network:before { content: '\e800'; } /* '' */
+.icon-database:before { content: '\e801'; } /* '' */
+.icon-tablet:before { content: '\e802'; } /* '' */
+.icon-upload-cloud:before { content: '\e803'; } /* '' */
+.icon-art-gallery:before { content: '\e804'; } /* '' */
+.icon-cog:before { content: '\e807'; } /* '' */
+.icon-globe:before { content: '\e808'; } /* '' */
+.icon-cloudWhite:before { content: '\e809'; } /* '' */
+.icon-databaseWhite:before { content: '\e805'; } /* '' */
+.icon-cloud:before { content: '\e806'; } /* '' */
