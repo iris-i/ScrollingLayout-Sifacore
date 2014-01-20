@@ -1,3 +1,4 @@
-Created by Codrops
+Created by Iris.I
 
-Please read more about our license here: http://tympanus.net/codrops/licensing/ 
+Based on the Fixed background scrolling-layout website on http://tympanus.net/codrops/2013/05/02/fixed-background-scrolling-layout/
+
